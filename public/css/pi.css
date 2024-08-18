@@ -1,0 +1,1020 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+button,
+textarea,
+input,
+select,
+img,
+a,
+p {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+.main-container {
+    padding: 30px 5% 0%;
+}
+
+input {
+    font-size: 15px;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.heading p {
+    color: #0D171C;
+    font-size: 24px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.first-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 5px;
+}
+
+.first-name p {
+    color: #0D171C;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.first-name input {
+    height: 56px;
+    padding: 15px;
+    background: #F7FAFA;
+    border-radius: 12px;
+    border: 1px #D1DEE5 solid;
+    width: 400px;
+}
+
+.last-name p {
+    color: #0D171C;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.last-name input {
+    height: 56px;
+    padding: 15px;
+    background: #F7FAFA;
+    border-radius: 12px;
+    border: 1px #D1DEE5 solid;
+    width: 400px;
+}
+
+.second-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 5px;
+}
+
+.dob p {
+    color: #0D171C;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.dob input {
+    height: 56px;
+    padding: 15px;
+    background: #F7FAFA;
+    border-radius: 12px;
+    border: 1px #D1DEE5 solid;
+    width: 400px;
+}
+
+.gender p {
+    color: #0D171C;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.gender input {
+    height: 56px;
+    padding: 15px;
+    background: #F7FAFA;
+    border-radius: 12px;
+    border: 1px #D1DEE5 solid;
+    width: 400px;
+}
+
+.gender-option {
+    width: 400px;
+    flex-direction: column;
+    background: #F7FAFA;
+    display: none;
+    z-index: 5;
+    position: absolute;
+}
+
+.gender-option a {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    text-decoration: none;
+    color: #0D171C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender-option a:hover {
+    background-color: #E94057;
+    color: white;
+}
+
+.third-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 5px;
+}
+
+.third-div p {
+    color: #0D171C;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.third-div input {
+    height: 56px;
+    padding: 15px;
+    background: #F7FAFA;
+    border-radius: 12px;
+    border: 1px #D1DEE5 solid;
+    width: 400px;
+}
+
+.interested-option {
+    width: 400px;
+    flex-direction: column;
+    background: #F7FAFA;
+    display: none;
+    z-index: 5;
+    position: absolute;
+}
+
+.interested-option a {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    text-decoration: none;
+    color: #0D171C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interested-option a:hover {
+    background-color: #E94057;
+    color: white;
+}
+
+.add-interest {
+    margin-top: 18px;
+}
+
+.lookingforfield,
+.addinterestfield,
+.sexualorientationfield {
+    width: fit-content;
+    height: 56px;
+    padding: 16px;
+    background: #F7FAFA;
+    border-radius: 78px;
+    overflow: hidden;
+    border: 1px #D1DEE5 solid;
+    cursor: pointer;
+}
+
+.looking-for p,
+.add-interest p,
+.sexual-orientation p {
+    color: #0D171C;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.lookingforfield p,
+.sexualorientationfield p,
+.addinterestfield p {
+    color: #0D171C;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.forth-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 900px;
+}
+
+.secondcol {
+    margin-left: 50px;
+}
+
+.fifth-div {
+    width: 900px;
+}
+
+.photo-container {
+    width: 400px;
+    height: 250px;
+    border-radius: 12px;
+    border: 2px #D1DEE5 dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-file-input {
+    width: 113.89px;
+    height: 40px;
+    background: #E8EDF2;
+    border-radius: 12px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    color: #0D171C;
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.21px;
+    word-wrap: break-word
+}
+
+.hidden-input {
+    position: absolute;
+    display: none;
+}
+
+#photoheading {
+    color: #0D171C;
+    font-size: 22px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    line-height: 27.50px;
+    word-wrap: break-word
+}
+
+#pc-para {
+    text-align: center;
+    color: #0D171C;
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word
+}
+
+#pc-head {
+    text-align: center;
+    color: #0D171C;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    line-height: 22.50px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+#bioheading {
+    color: #0D171C;
+    font-size: 22px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    line-height: 27.50px;
+    word-wrap: break-word
+}
+
+textarea {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    height: 144px;
+    padding: 15px;
+    background: #F7FAFA;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px #D1DEE5 solid;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+
+    color: #4F7A94;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+#dob-svg {
+    position: relative;
+    left: -40px;
+}
+
+@media screen and (max-width:1002px) {
+
+    .main-container {
+        padding: 30px 0% 0%;
+    }
+
+}
+
+
+@media screen and (max-width:930px) {
+
+    .first-div {
+        gap: 50px;
+    }
+
+    .second-div {
+        gap: 30px;
+    }
+
+    .third-div {
+        gap: 50px;
+    }
+
+    .forth-container {
+        width: 850px;
+    }
+
+    .fifth-div {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width:880px) {
+
+    .first-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .second-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .dob {
+        margin-left: 22px;
+    }
+
+    .third-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .forth-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .selected-value-looking-for {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px !important;
+    }
+
+    .selected-value-sex-orientation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px !important;
+    }
+
+    .secondcol {
+        margin-left: 0px;
+    }
+
+    .fifth-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .selected-insterest-value {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px !important;
+    }
+}
+
+.last-element {
+    background-color: white;
+}
+
+footer {
+    justify-content: space-around;
+}
+
+header {
+    justify-content: center;
+}
+
+@media screen and (max-width:443px) {
+
+    .first-name input {
+        width: 320px;
+        height: 45px;
+    }
+
+    .last-name input {
+        width: 320px;
+        height: 45px;
+    }
+
+    .dob input {
+        width: 320px;
+        height: 45px;
+    }
+
+    .gender input {
+        width: 320px;
+        height: 45px;
+    }
+
+    .gender-option {
+        width: 320px;
+    }
+
+    .third-div input {
+        width: 320px;
+        height: 45px;
+    }
+
+    .photo-container {
+        width: 320px;
+    }
+
+    .bio {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .first-name input {
+        width: 260px;
+        height: 45px;
+    }
+
+    .last-name input {
+        width: 260px;
+        height: 45px;
+    }
+
+    .dob input {
+        width: 260px;
+        height: 45px;
+    }
+
+    .gender input {
+        width: 260px;
+        height: 45px;
+    }
+
+    .gender-option {
+        width: 260px;
+        height: 45px;
+    }
+
+    .third-div input {
+        width: 260px;
+        height: 45px;
+    }
+
+    .photo-container {
+        width: 260px;
+    }
+
+    .bio {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 260px;
+    }
+}
+
+.lookingfor-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.lf-popup-container {
+    width: 400px;
+    height: 450px;
+    background-color: #E94057;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lf-popup-container h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.lf-popup-container p {
+    color: #cfcaca;
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.lf-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.lf-option {
+    width: 105px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px white solid;
+    background-color: white;
+    cursor: pointer;
+}
+
+.lf-option p {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.lf-option:hover {
+    background-color: white;
+}
+
+.lf-option:hover p {
+    color: #E94057;
+}
+
+.lf-button {
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lf-button p {
+    margin-top: 12px;
+    color: black;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.lf-button:hover p {
+    color: #E94057;
+}
+
+.lf-option.selected {
+    border: 2px solid white;
+}
+
+.lf-option p.selected-text {
+    color: #E94057;
+}
+
+.selected-value-looking-for {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: black;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.selected-value-sex-orientation {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: black;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.selected-insterest-value {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: black;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+
+.sexorientation-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.so-popup-container {
+    width: 400px;
+    height: 450px;
+    background-color: #E94057;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.so-popup-container h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.so-popup-container p {
+    color: #cfcaca;
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.so-options {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 290px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.so-option {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.so-option p {
+    color: whitesmoke;
+    margin-left: 45px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.so-options::-webkit-scrollbar {
+    display: none;
+}
+
+.so-option p.selected-text {
+    color: white;
+}
+
+.so-button {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.so-button p {
+    margin-top: 12px;
+    color: black;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.so-button:hover p {
+    color: #E94057;
+}
+
+.so-option p.selected-text {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.interests-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.i-popup-container {
+    width: 400px;
+    height: 450px;
+    background-color: #E94057;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-popup-container h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.i-popup-container p {
+    color: #cfcaca;
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.i-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 290px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-option {
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 5px 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.i-option p {
+    margin: 0;
+}
+
+.i-button {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-button p {
+    margin-top: 12px;
+    color: black;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.i-option p.selected-text {
+    color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+
+#progress-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    width: 0%;
+}
+
+#progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.continue-btn {
+    margin-top: 25px;
+    height: 50px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    word-wrap: break-word;
+    background-color: #E94057;
+}
+
+.main-photo,
+.main-bio,
+.main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#error-container {
+    position: fixed;
+    top: 10px;
+    right: -350px;
+    padding: 10px;
+    background-color: #E94057;
+    color: white;
+    border-radius: 25px;
+    z-index: 1000;
+    width: 305px;
+    max-height: 200px;
+    overflow: auto;
+    display: none;
+    transition: right 0.5s ease-in-out;
+}
+
+
+#error-message {
+    font-family: Open Sans;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+#close-error-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}

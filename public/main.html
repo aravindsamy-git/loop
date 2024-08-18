@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Social </title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/uicons-bold-rounded.css">
+    <link rel="stylesheet" href="css/Roboto.css">
+</head>
+
+<body>
+    <svg style="display:none">
+        <defs>
+            <symbol id="loopingPath" viewBox="0 0 147.5 68">
+                <title>Loading</title>
+                <path d="M94.65,14a27.5,27.5,0,1,1-.17,39.88L52.93,14.06a27.5,27.5,0,1,0,.12,39.77Z" fill="none"
+                    stroke-miterlimit="10" />
+            </symbol>
+        </defs>
+    </svg>
+    <div id="loader" class="loader">
+        <svg class="loading-spinner">
+            <use id="background" xlink:href="#loopingPath" />
+            <use id="master" xlink:href="#loopingPath" />
+        </svg>
+    </div>
+    <main>
+
+        <header id="header">
+            <img class="img1" id="logo" src="media/logo.png" alt="" onclick="redirection('logo')">
+
+            <div class="center-element" style="width: 575.52px; height: 48.11px; position: relative">
+                <img style=" color:#93939A; font-family: manrope; display: flex; justify-content: center; align-items: center; width: 575.52px; height: 48.11px; left: 0px; top: 0px; position: absolute;"
+                    src="media/Union.png" />
+
+                <div class="overview" onclick="redirection('overview')" id="re-overview">Overview</div>
+                <div class="plans" onclick="redirection('plans')" id="re-plans">Plans</div>
+                <div class="about" onclick="redirection('policy')" id="re-policy">Policy</div>
+                <div class="signup" onclick="redirection('signup')" id="re-signup">Signup</div>
+            </div>
+
+            <div class="last-element" onclick="redirection('login')">
+                <div class="login-button" id="login-button" onclick="redirection('login')">
+                    <p onclick="redirection('login')">Login</p>
+                </div>
+            </div>
+
+            <img class="img2" id="toggle-button" src="media/menu.png">
+
+            <img class="img3" id="toggle-button1" src="media/menu-2.png">
+        </header>
+
+        <div class="menus" id="menus">
+
+            <img class="img4" src="media/logoW.png" alt="">
+            <i id="close-button" class="fas fa-times"></i>
+
+            <div class="options">
+                <div class="option-li" onclick="redirection('overview')" id="o-overview">
+                    <a>Overview</a>
+                </div>
+                <br>
+                <div class="option-li" onclick="redirection('plans')" id="o-plans">
+                    <a>Plans</a>
+                </div>
+                <br>
+                <div class="option-li" onclick="redirection('policy')" id="o-policy">
+                    <a>Policy</a>
+                </div>
+                <br>
+                <div class="option-li" onclick="redirection('signup')" id="o-signup">
+                    <a>Signup</a>
+                </div>
+            </div>
+
+            <div class="login-btn" onclick="redirection('login')">
+                <div class="i-login-btn" onclick="redirection('login')" id="i-login-btn">
+                    <a onclick="redirection('login')">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="herosection" id="herosection">
+            <div class="herosection-i" id="herosection-i">
+                <div class="herosection-text">
+                    <span>Connecting <span style="color: #E94057;">hearts</span>,<br /> one click at a time</span>
+                </div>
+                <div class="imgdiv">
+                    <img src="media/hero-section-img.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="Ellipse2"></div>
+
+        <div class="first-div">
+            <div class="text1">With Loops Social life made simple </div>
+
+            <div class="div-dc">
+                <img src="media/connected-wdh.png" alt="">
+            </div>
+
+            <div class="div-dcs">
+                <img src="media/connected-dots2.png" alt="">
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="sec-div">
+
+            <div class="sec-div-text1">Awesome matches for everyone based on their interests</div>
+
+            <br>
+            <br>
+
+            <div class="sec-div-text2">Explore our subscription plans to enhance <br> your dating experience</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="outer-container">
+            <div class="container">
+
+                <input type="radio" name="slider" id="item-1">
+                <input type="radio" name="slider" id="item-2" checked>
+                <input type="radio" name="slider" id="item-3">
+                <input type="radio" name="slider" id="item-4">
+                <input type="radio" name="slider" id="item-5">
+
+                <div class="cards">
+                    <label class="card" for="item-1" id="sliderimage-1">
+                        <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
+                            alt="song">
+                    </label>
+                    <label class="card" for="item-2" id="sliderimage-2">
+                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+                            alt="song">
+                    </label>
+                    <label class="card" for="item-3" id="sliderimage-3">
+                        <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                            alt="song">
+                    </label>
+                    <label for="item-4" class="card" id="sliderimage-4">
+                        <img src="media/edgar-IeVY4eBLFZk-unsplash.jpg" alt="song">
+                    </label>
+                    <label for="item-5" class="card" id="sliderimage-5">
+                        <img src="media/istockphoto-1292972275-1024x1024.jpg" alt="song">
+                    </label>
+                </div>
+
+                <div class="indicator-container">
+                    <button class="control-btn" id="prev-btn">&#10094;</button>
+                    <div class="indicator1" id="indicator1"></div>
+                    <div class="indicator2" id="indicator2"></div>
+                    <div class="indicator3" id="indicator3"></div>
+                    <div class="indicator4" id="indicator4"></div>
+                    <div class="indicator5" id="indicator5"></div>
+                    <button class="control-btn" id="next-btn">&#10095;</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="joinus-container">
+            <p class="joinusp">Join us in crafting your love story, where every interaction is a step towards finding that special someone who completes you</p>
+            <img src="media/joinus.png" alt="">
+        </div>
+
+        <div class="bottom-footer">
+            <div class="toparrow-container" onclick="scrolltotop()">
+                <img src="media/top-arrow.png" alt="">
+                <p>TOP</p>
+            </div>
+            <footer>
+                <div class="footerfirst-element">
+                    <img src="media/f-logo.png" alt="">
+                    <br>
+                    <br>
+                    <div class="socialmedia-con">
+                        <img src="media/facebook.png" alt="">
+                        <img src="media/twitter.png" alt="">
+                        <img src="media/instagram.png" alt="">
+                        <img src="media/linkedin.png" alt="">
+                        <img src="media/youtube.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="footercenter-element">
+                    <ul>
+                        <li onclick="redirection('overview')">Overview</li>
+                        <li onclick="redirection('plans')">Plans</li>
+                        <li onclick="redirection('about')">About</li>
+                        <li onclick="redirection('signup')">Signup</li>
+                    </ul>
+                </div>
+    
+                <div class="footerlast-element">
+                    <p>Contact us</p>
+                    <div class="email">
+                        <img src="media/Email.png" alt="">
+                        <p>Loopsocial@gmail.com</p>
+                    </div>
+    
+                    <div class="phonenumber">
+                        <img src="media/Phone.png" alt="">
+                        <p>91+ 7105652651</p>
+                    </div>
+    
+                    <div class="location">
+                        <img src="media/Mark.png" alt="">
+                        <p>Trichy , India</p>
+                    </div>
+                </div>
+            </footer>
+            <div class="footerline-container">
+                <div class="footer-line"></div>
+                <br>
+                <div class="footerline-content">
+                    <p>Copyright@2024</p>
+                    <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+    </main>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/a7e9f794eb.js"></script>
+</body>
+
+</html>

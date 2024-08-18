@@ -1,0 +1,35 @@
+.heading {
+    color: black;
+    font-size: calc(20px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+    font-family: Sk-Modernist;
+    font-weight: 700;
+    line-height: 70px;
+    word-wrap: break-word;
+}
+
+.paragraph {
+    color: black;
+    font-size: calc(15px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+    font-family: Sk-Modernist;
+    line-height: 48px;
+}
+
+.section-heading {
+    color: black;
+    font-size: calc(15px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 600;
+    font-family: Sk-Modernist;
+    line-height: 45px;
+}
+
+ul {
+    font-size: calc(15px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 100;
+    line-height: 45px;
+    margin-left: 2%;
+}
+
+.about {
+    color: white;
+    background: #E94057;
+}

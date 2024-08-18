@@ -1,0 +1,114 @@
+document.addEventListener('DOMContentLoaded', function () {
+  showLoader();
+})
+
+function showLoader() {
+  document.getElementById("loader").style.display = "flex";
+  document.body.style.overflow = 'hidden'
+  document.querySelector(".loading-spinner").style.setProperty('--total-length', document.querySelector("#loopingPath path").getTotalLength());
+}
+
+function hideLoader() {
+  document.getElementById("loader").style.display = "none";
+  document.body.style.overflowY = 'auto'
+}
+
+window.addEventListener('load', () => {
+  hideLoader()
+});
+
+const menuButton = document.getElementById('toggle-button');
+const menuButton1 = document.getElementById('toggle-button1');
+const menuContainer = document.getElementById('menus');
+const closeButton = document.getElementById('close-button');
+const header = document.getElementById('header');
+
+menuButton.addEventListener('click', () => {
+  menuContainer.classList.add('active');
+  menuContainer.style.transform = 'translate3d(0, 0, 0)';
+  document.body.style.overflowY = "hidden";
+});
+
+closeButton.addEventListener('click', () => {
+  menuContainer.style.transform = 'translate3d(100%, 0, 0)';
+  setTimeout(() => {
+    menuContainer.classList.remove('active');
+    document.body.style.overflowY = "auto";
+  }, 500);
+});
+
+menuButton1.addEventListener('click', () => {
+  menuContainer.classList.add('active');
+  menuContainer.style.transform = 'translate3d(0, 0, 0)';
+  document.body.style.overflowY = "hidden";
+});
+
+closeButton.addEventListener('click', () => {
+  menuContainer.style.transform = 'translate3d(100%, 0, 0)';
+  setTimeout(() => {
+    menuContainer.classList.remove('active');
+    document.body.style.overflowY = "auto";
+  }, 500);
+});
+
+window.addEventListener('resize', checkScreenWidth);
+
+function checkScreenWidth() {
+  const menus = document.getElementById('menus');
+
+  if (window.innerWidth > 1010) {
+    menus.classList.remove('active');
+    menus.style.transform = 'translate3d(100%, 0, 0)';
+    document.body.style.overflowY = "auto";
+  }
+}
+
+checkScreenWidth();
+
+function redirection(targetId) {
+  let redirectUrl;
+  switch (targetId) {
+    case "logo":
+      redirectUrl = "/";
+      break
+    case "overview":
+      redirectUrl = "/";
+      break;
+    case "plans":
+      redirectUrl = "/plans";
+      break;
+    case "policy":
+      redirectUrl = "/policy";
+      break;
+    case "signup":
+      redirectUrl = "/signup";
+      break;
+    case "login":
+      redirectUrl = "/login";
+      break
+    default:
+      console.error(`Invalid element ID: ${targetId}`);
+      return;
+  }
+  window.location.href = redirectUrl;
+}
+
+const images = document.querySelectorAll('img');
+
+images.forEach(image => {
+  if (image.id !== 'logo' && image.id !== 'toggle-button' && image.id !== 'toggle-button1') {
+    image.addEventListener('mousedown', (event) => {
+      event.preventDefault();
+    });
+  }
+});
+
+
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
+function scrolltotop() {
+  const targetPixelPosition = 1;
+  window.scroll({ top: targetPixelPosition, left: 0, behavior: 'smooth' });
+}

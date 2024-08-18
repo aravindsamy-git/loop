@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.otp-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.otp-popup-container {
+    width: 370px;
+    height: 300px;
+    background-color: #E94057;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp-inputs {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp-input {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.otp-popup-container h1 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.otp-btn {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp-btn p {
+    color: #E94057;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#register,#password-eye{
+    cursor: pointer;
+}
+
+.resend-otp {
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    cursor: pointer;
+}
+
+#error-container {
+    position: fixed;
+    top: 10px;
+    right: -350px;
+    padding: 10px;
+    background-color: #E94057;
+    color: white;
+    border-radius: 25px;
+    z-index: 1000;
+    width: 305px;
+    max-height: 200px;
+    overflow: auto;
+    display: none;
+    transition: right 0.5s ease-in-out;
+}
+
+
+#error-message {
+    font-family: Open Sans;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#close-error-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 505px;
+}
+
+.left-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.inner-container {
+    width: 100%;
+}
+
+.intro {
+    width: 400px;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.black-txt1 {
+    color: black;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 80px;
+    word-wrap: break-word;
+}
+
+.red-txt {
+    color: #E94057;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    word-wrap: break-word;
+}
+
+.black-txt2 {
+    color: black;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    word-wrap: break-word;
+}
+
+.user-welcome {
+    color: black;
+    font-family: "Open Sans";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 76.04px;
+    word-wrap: break-word
+}
+
+.useremail {
+    max-width: 600px;
+    width: 75%;
+    min-width: 400px;
+}
+
+.useremail-box {
+    background: #EAF0F7;
+    border-radius: 9.88px;
+    height: 65px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#useremail-input {
+    color: #4F555A;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    cursor: pointer;
+}
+
+.pass {
+    width: 75%;
+    margin-top: 20px;
+    min-width: 400px;
+}
+
+.pass-box {
+    background: #EAF0F7;
+    border-radius: 9.88px;
+    height: 65px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#password-input {
+    color: #4F555A;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 90%;
+    cursor: pointer;
+}
+
+.Forgot-password{
+    color: #4F555A;
+    font-family: "Open Sans";
+    font-size: 12px;
+    margin-left: 7px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.fas fa-eye-slash {
+    cursor: pointer;
+}
+
+.c-pass {
+    width: 75%;
+    margin-top: 20px;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.c-pass-box {
+    background: #EAF0F7;
+    border-radius: 9.88px;
+    height: 65px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#confirm-password-input {
+    color: #4F555A;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 90%;
+}
+
+.register-box {
+    width: 75%;
+    background: #FC466B;
+    box-shadow: 0px 11.851164817810059px 20.73953628540039px 3.950388193130493px rgba(68, 97, 242, 0.15);
+    border-radius: 9.88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    min-width: 400px;
+    max-width: 600px;
+    cursor: pointer;
+}
+
+.RegText {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+@media screen and (max-width:879px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+
+    .left-content {
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    .right-content {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .inner-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .useremail {
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+    .pass {
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+    .c-pass {
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+    .register-box {
+        min-width: 300px;
+        max-width: 500px;
+    }
+
+    #register {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Forgot-password{
+        color: #4F555A;
+        font-family: "Open Sans";
+        font-size: 12px;
+        margin-left: 0px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:392px) {
+
+    .black-txt1 {
+        font-size: 28px;
+    }
+
+    .red-txt {
+        font-size: 28px;
+    }
+
+    .black-txt2 {
+        font-size: 28px;
+    }
+
+    .Forgot-password{
+        color: #4F555A;
+        font-family: "Open Sans";
+        font-size: 12px;
+        margin-left: 0px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+}
+
+.otp-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.otp-popup-container {
+    width: 370px;
+    height: 300px;
+    background-color: #E94057;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp-inputs {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp-input {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.otp-popup-container h1 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.otp-btn {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp-btn p {
+    color: #E94057;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.resend-otp {
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    cursor: pointer;
+}
+
+.phonenumber-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.phonenumber-popup-container {
+    width: 370px;
+    height: 300px;
+    background-color: #E94057;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.phonenumber-popup-container h1 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.phonenumber-btn {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.phonenumber-btn p {
+    color: #E94057;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+#phonenumberotp{
+    margin-top: 15px;
+    color: #4F555A;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid #E94057;
+    outline: none;
+    background: white;
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.close-btn{
+    position: relative;
+    top: -225px;
+    right: -160px;
+    cursor: pointer;
+}
+
+.close-btn:hover svg path {
+    stroke: white;
+}
+
+#phonenumberotp::placeholder {
+    color: #999;
+    font-size: 12px;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+
+.newphonenumber-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.newphonenumber-popup-container {
+    width: 370px;
+    height: 300px;
+    background-color: #E94057;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.newphonenumber-popup-container h1 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.newphonenumber-btn {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newphonenumber-btn p {
+    color: #E94057;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+#newphonenumberotp{
+    margin-top: 15px;
+    color: #4F555A;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid #E94057;
+    outline: none;
+    background: white;
+    width: 70%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#newphonenumberotp::placeholder {
+    color: #999;
+    font-size: 12px;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+input[type="password"]::-moz-clear {
+    display: none;
+}

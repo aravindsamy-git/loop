@@ -1,0 +1,125 @@
+button,
+textarea,
+input,
+select,
+img,
+a,
+p {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.inner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.overlay-image img{
+    width: 25px;
+    height: auto;
+}
+
+.image-container:hover .profile-photo{
+    opacity: 0.5;
+}
+
+.image-container:hover .overlay-image{
+    opacity: 1;
+}
+
+.file-input {
+    display: none;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container p{
+    font-family: "inria sans";
+    color: #000000;
+    font-size: large;
+    font-weight: lighter;
+}
+
+@media (max-width:880px) {
+    .inner {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-photo-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:443px) {
+    .inner {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-photo-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E94057;
+    border-radius: 10px;
+}

@@ -1,0 +1,144 @@
+#section1 {
+    width: 100%;
+    height: 100%;
+}
+
+.swipes-maincontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.swiper {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.swipe-imagecontainer {
+    position: relative;
+    height: 100%;
+    width: 300px;
+}
+
+.swipe-options {
+    height: 30%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.reject-btn {
+    width: 100px;
+    height: 100px;
+    background: white;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.07);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.heart-btn {
+    width: 110px;
+    height: 110px;
+    background: #E94057;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.07);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.message-btn {
+    width: 100px;
+    height: 100px;
+    background: white;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.07);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.message-btn img {
+    width: 31px;
+    height: 31px;
+}
+
+.swipecard {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #FFFFFF;
+    will-change: transform;
+    transition: transform 0.3s ease;;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.swipecard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+.swipecard p {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Sk-Modernist-Bold';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.no-more-swipes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.no-more-swipesp1{
+    font-family: "Roboto";
+    color: #444142;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.no-more-swipesp2{
+    font-family: "Roboto";
+    color: #848484;
+    font-weight: medium;
+    font-size: 16px;
+}
+
+.no-more-swipesp3{
+    font-family: "Roboto";
+    color: #E94057;
+    font-weight: medium;
+    font-size: 16px;
+}

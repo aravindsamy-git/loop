@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Social </title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="../css/premium.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <link rel="icon" href="../media/loop-logo.png">
+    <link rel="stylesheet" href="../css/Roboto.css">
+
+</head>
+
+<body>
+    <svg style="display:none">
+        <defs>
+            <symbol id="loopingPath" viewBox="0 0 147.5 68">
+                <title>Loading</title>
+                <path d="M94.65,14a27.5,27.5,0,1,1-.17,39.88L52.93,14.06a27.5,27.5,0,1,0,.12,39.77Z" fill="none"
+                    stroke-miterlimit="10" />
+            </symbol>
+        </defs>
+    </svg>
+    
+    <div id="loader" class="loader">
+        <svg class="loading-spinner">
+            <use id="background" xlink:href="#loopingPath" />
+            <use id="master" xlink:href="#loopingPath" />
+        </svg>
+    </div>
+    
+    <main>
+        <header>
+            <img class="img1" id="logo" src="../media/logo.png" alt="">
+
+            <div class="userdetails" id="userdetails">
+                <div class="userprofilediv">
+                    <img class="userprofileimg" id="userprofileimg" src="" alt="" />
+                </div>
+                <p class="username" id="username"></p>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="price-toggler">
+                <span class="Week active">Weekly</span>
+                <span class="Month">Monthly</span>
+                <span class="Quarter">Quarterly</span>
+            </div>
+
+            <div class="box-container">
+                <div class="box1">
+                    <h3>Iron</h3>
+                    <div class="detail1 detail">
+                        <p>1 Week</p>
+                        <p>100 likes & dislikes & 10 chats</p>
+                        <p>₹ 300</p>
+                    </div>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+
+                <div class="box2">
+                    <h3>Silver</h3>
+                    <div class="detail2 detail">
+                        <p>1 Week</p>
+                        <p>140 likes & dislikes & 15 chats</p>
+                        <p>₹ 400</p>
+                    </div>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+
+                <div class="box3">
+                    <h3>Gold</h3>
+                    <div class="detail3 detail">
+                        <p>1 Week</p>
+                        <p>250 likes & dislikes & 30 chats</p>
+                        <p>₹ 700</p>
+                    </div>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+
+                <div class="box4">
+                    <h3>Platinum</h3>
+                    <div class="detail4 detail">
+                        <p>1 Week</p>
+                        <p>Unlimited likes & dislikes & Unlimited chats</p>
+                        <p>₹ 1199</p>
+                    </div>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <script src="../js/premium.js"></script>
+</body>
+
+</html>

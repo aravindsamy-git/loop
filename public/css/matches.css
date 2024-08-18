@@ -1,0 +1,311 @@
+#section2 {
+  width: 100%;
+  height: 100%;
+}
+
+.likesdislikeoption-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 15px;
+}
+
+.match-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header p {
+  font-size: 18px;
+  color: #848484;
+  font-weight: bold;
+  font-family: "Roboto";
+  margin: 0;
+}
+
+.user-slider {
+  position: relative;
+}
+
+.user-list {
+  margin-top: 5px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 30px;
+}
+
+.user-list::-webkit-scrollbar {
+  display: none;
+}
+
+.user-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-container-usercard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.userprofile-icon {
+  width: 130px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+  -webkit-user-drag: none;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.username {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Sk-Modernist-Bold";
+  -webkit-user-drag: none;
+}
+
+.username-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.dislike-icon,
+.like-icon {
+  height: 31px;
+  width: 31px;
+  object-fit: cover;
+  cursor: pointer;
+  -webkit-user-drag: none;
+}
+
+.dislike-parent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  width: 100px;
+  margin-top: 15px;
+}
+
+.usermessage-icon {
+  cursor: pointer;
+}
+
+.useraction-parent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  width: 100px;
+  margin-top: 15px;
+}
+
+.usercard {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 290px;
+  min-height: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background-color: white;
+  transition: all 1s;
+  user-select: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.usercard:first-of-type {
+  margin-left: 10px;
+}
+
+.usercard:last-of-type {
+  margin-right: 10px;
+}
+.scroll-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.scroll-left,
+.scroll-left-matches,
+.scroll-right,
+.scroll-right-matches,
+.scroll-left-likedislike-mobile,
+.scroll-right-likedislike-mobile,
+.scroll-left-matches-mobile,
+.scroll-right-matches-mobile {
+  cursor: pointer; /* Indicates the SVG is clickable */ /* Removes any default box-shadow (often used as an outline) */
+}
+
+/* mobile screen */
+
+.section2-main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-likedislike-container {
+  padding: 15px;
+  overflow: hidden;
+}
+
+.main-matches-container {
+  overflow: hidden;
+  padding: 15px;
+}
+
+.main-header-container {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.main-header-container p {
+  font-size: 18px;
+  color: #848484;
+  font-weight: bold;
+  font-family: "Roboto";
+  margin: 0;
+}
+
+.swiper-container1,
+.swiper-container2 {
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+@media (max-width: 698px) {
+  .usercard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 140px;
+    max-height: 200px;
+    max-width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 1s;
+    user-select: none;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+
+  .usercard:focus {
+    outline: none;
+  }
+
+  .swiper-slide {
+    width: 200px;
+  }
+
+  .user-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-container-usercard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .userprofile-icon {
+    width: 130px;
+    height: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+    -webkit-user-drag: none;
+    margin-top: 0px;
+    margin-left: 5px;
+  }
+
+  .username {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Sk-Modernist-Bold";
+    -webkit-user-drag: none;
+  }
+
+  .username-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dislike-parent {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+    width: 100%;
+  }
+}
+
+.nodatatext {
+  font-family: "Roboto";
+  font-size: large;
+  color: #848484;
+  font-weight: normal;
+}
+
+.nodatatext-universe {
+  font-family: "Roboto";
+  font-size: large;
+  color: #848484;
+  font-weight: normal;
+  width: 100%;
+}
+
+.matchuserage {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Sk-Modernist-Bold";
+  -webkit-user-drag: none;
+}

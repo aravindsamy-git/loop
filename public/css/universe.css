@@ -1,0 +1,85 @@
+#section3 {
+    width: 100%;
+    height: 100%;
+}
+
+.main-universe-container {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.universe-scrollable-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.universe-scrollable-container::-webkit-scrollbar {
+    display: none;
+}
+  
+.main-header-universe-container {
+    font-size: 18px;
+    color: #848484;
+    font-weight: bold;
+    font-family: "Roboto";
+    margin: 0;
+    z-index: 2;
+    text-align: justify;
+}
+
+.universe-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 65px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.5;
+    user-select: none;
+    flex: 0 0 auto;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.universe-profilediv{
+    height: 55.25px;
+    width: 55.25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;  
+    margin-left: 10px;
+    border: 2px solid #eb3223;
+}
+
+.universe-userprofile{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.universe-card p{
+    font-size: 16px;
+    color: #848484;
+    font-weight: normal;
+    font-family: "Roboto";
+    margin: 0;
+}
+
+.bottom-container{
+    z-index: 2;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop Social </title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel="stylesheet" href="../css/plans.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="icon" href="../media/loop-logo.png">
+
+</head>
+
+<body>
+  <svg style="display:none">
+    <defs>
+      <symbol id="loopingPath" viewBox="0 0 147.5 68">
+        <title>Loading</title>
+        <path d="M94.65,14a27.5,27.5,0,1,1-.17,39.88L52.93,14.06a27.5,27.5,0,1,0,.12,39.77Z" fill="none"
+          stroke-miterlimit="10" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div id="loader" class="loader">
+    <svg class="loading-spinner">
+        <use id="background" xlink:href="#loopingPath" />
+        <use id="master" xlink:href="#loopingPath" />
+    </svg>
+</div>
+
+  <main>
+
+    <header id="header">
+      <img class="img1" id="logo" src="../media/logo.png" alt="" onclick="redirection('logo')">
+
+      <div class="center-element" style="width: 575.52px; height: 48.11px; position: relative">
+        <img
+          style=" color:#93939A; font-family: manrope; display: flex; justify-content: center; align-items: center; width: 575.52px; height: 48.11px; left: 0px; top: 0px; position: absolute;"
+          src="../media/Union.png" />
+
+        <div class="overview" onclick="redirection('overview')" id="re-overview">Overview</div>
+        <div class="plans" onclick="redirection('plans')" id="re-plans">Plans</div>
+        <div class="about" onclick="redirection('policy')" id="re-policy">Policy</div>
+        <div class="signup" onclick="redirection('signup')" id="re-signup">Signup</div>
+      </div>
+
+      <div class="last-element" onclick="redirection('login')">
+        <div class="login-button" id="login-button" onclick="redirection('login')">
+          <p onclick="redirection('login')">Login</p>
+        </div>
+      </div>
+
+      <img class="img2" id="toggle-button" src="../media/menu.png">
+
+      <img class="img3" id="toggle-button1" src="../media/menu-2.png">
+    </header>
+
+    <div class="menus" id="menus">
+
+      <img class="img4" src="../media/logoW.png" alt="">
+      <i id="close-button" class="fas fa-times"></i>
+
+      <div class="options">
+        <div class="option-li" onclick="redirection('overview')" id="o-overview">
+          <a>Overview</a>
+        </div>
+        <br>
+        <div class="option-li" onclick="redirection('plans')" id="o-plans">
+          <a>Plans</a>
+        </div>
+        <br>
+        <div class="option-li" onclick="redirection('policy')" id="o-policy">
+          <a>Policy</a>
+        </div>
+        <br>
+        <div class="option-li" onclick="redirection('signup')" id="o-signup">
+          <a>Signup</a>
+        </div>
+      </div>
+
+      <div class="login-btn" onclick="redirection('login')">
+        <div class="i-login-btn" onclick="redirection('login')" id="i-login-btn">
+          <a onclick="redirection('login')">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="price-toggler">
+        <span class="Week active">Weekly</span>
+        <span class="Month">Monthly</span>
+        <span class="Quarter">Quarterly</span>
+      </div>
+
+      <div class="box-container">
+        <div class="box1">
+          <h3>Iron</h3>
+          <div class="detail1 detail">
+            <p>1 Week</p>
+            <p>100 likes & dislikes & 10 chats</p>
+            <p>₹ 300</p>
+          </div>
+          <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="box2">
+          <h3>Silver</h3>
+          <div class="detail2 detail">
+            <p>1 Week</p>
+            <p>140 likes & dislikes & 15 chats</p>
+            <p>₹ 400</p>
+          </div>
+          <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="box3">
+          <h3>Gold</h3>
+          <div class="detail3 detail">
+            <p>1 Week</p>
+            <p>250 likes & dislikes & 30 chats</p>
+            <p>₹ 700</p>
+          </div>
+          <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="box4">
+          <h3>Platinum</h3>
+          <div class="detail4 detail">
+            <p>1 Week</p>
+            <p>Unlimited likes & dislikes & Unlimited chats</p>
+            <p>₹ 1199</p>
+          </div>
+          <a href="#" class="btn">Buy now</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="bottom-footer">
+      <div class="toparrow-container" onclick="scrolltotop()">
+        <img src="../media/top-arrow.png" alt="">
+        <p>TOP</p>
+      </div>
+      <footer>
+        <div class="footerfirst-element">
+          <img src="../media/f-logo.png" alt="">
+          <br>
+          <br>
+          <div class="socialmedia-con">
+            <img src="../media/facebook.png" alt="">
+            <img src="../media/twitter.png" alt="">
+            <img src="../media/instagram.png" alt="">
+            <img src="../media/linkedin.png" alt="">
+            <img src="../media/youtube.png" alt="">
+          </div>
+        </div>
+
+        <div class="footercenter-element">
+          <ul>
+            <li onclick="redirection('overview')">Overview</li>
+            <li onclick="redirection('plans')">Plans</li>
+            <li onclick="redirection('about')">About</li>
+            <li onclick="redirection('signup')">Signup</li>
+          </ul>
+        </div>
+
+        <div class="footerlast-element">
+          <p>Contact us</p>
+          <div class="email">
+            <img src="../media/Email.png" alt="">
+            <p>Loopsocial@gmail.com</p>
+          </div>
+
+          <div class="phonenumber">
+            <img src="../media/Phone.png" alt="">
+            <p>91+ 7105652651</p>
+          </div>
+
+          <div class="location">
+            <img src="../media/Mark.png" alt="">
+            <p>Trichy , India</p>
+          </div>
+        </div>
+      </footer>
+      <div class="footerline-container">
+        <div class="footer-line"></div>
+        <br>
+        <div class="footerline-content">
+          <p>Copyright@2024</p>
+          <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+  </main>
+
+  <script src="../js/header.js"></script>
+  <script src="../js/plans.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Protest+Revolution&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,
+textarea,
+input,
+select,
+img,
+a,
+p ,
+h1,
+h2,
+li{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.img1,
+.img2,
+.img3 {
+    pointer-events: auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    background-color: white;
+}
+
+.img1 {
+    width: 200px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.center-element {
+    display: flex;
+}
+
+.about {
+    color: #93939A;
+    font-family: "manrope";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123.17px;
+    height: 35.15px;
+    left: 298px;
+    top: 6px;
+    position: absolute;
+    background: white;
+    border-radius: 27.72px;
+    cursor: pointer;
+}
+
+.plans {
+    color: #93939A;
+    font-family: "manrope";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123.17px;
+    height: 35.15px;
+    left: 153px;
+    top: 6px;
+    position: absolute;
+    background: white;
+    border-radius: 27.72px;
+    cursor: pointer;
+}
+
+.signup {
+    color: #93939A;
+    font-family: "manrope";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123.17px;
+    height: 35.15px;
+    left: 442px;
+    top: 6px;
+    position: absolute;
+    background: white;
+    border-radius: 27.72px;
+    cursor: pointer;
+}
+
+.overview {
+    color: #93939A;
+    font-family: "manrope";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123.17px;
+    height: 35.15px;
+    left: 10px;
+    top: 6px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 27.72px;
+    cursor: pointer;
+}
+
+.overview:hover,
+.about:hover,
+.signup:hover,
+.plans:hover {
+    background: #E94057;
+    color: white;
+}
+
+.last-element {
+    width: 143.52px;
+    height: 45.11px;
+    display: flex;
+    background-color: #E94057;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope";
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E94057;
+    border-radius: 10px;
+}
+
+.img2,
+.img3 {
+    display: none;
+}
+
+.menus {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E94057;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: transform 0.5s ease-in-out;
+    transform: translate3d(100%, 0, 0);
+    z-index: 100;
+}
+
+.menus.active {
+    right: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.menus:not(.active) {
+    transition: transform 0.5s ease-in-out;
+    transform: translate3d(100%, 0, 0);
+}
+
+.menus .fas {
+    position: absolute;
+    right: 20px;
+    top: 26px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.options {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    padding: 0% 5% 0%;
+}
+
+.option-li {
+    background: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option-li a {
+    color: black;
+    margin-left: 20px;
+    font-family: "manrope";
+    font-size: medium;
+    font-weight: 500;
+}
+
+.login-btn {
+    position: absolute;
+    width: 100%;
+    padding: 0% 20% 0%;
+    top: 350px;
+    cursor: pointer;
+}
+
+.i-login-btn {
+    background: white;
+    height: 30px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.i-login-btn a {
+    color: #E94057;
+    font-family: "manrope";
+    font-size: medium;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1010px) {
+
+    .center-element,
+    .last-element {
+        display: none;
+    }
+
+    .img1 {
+        width: 180px;
+        height: 40px;
+    }
+
+    .img2 {
+        display: block;
+        position: absolute;
+        margin-top: 6px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .img4 {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 180px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+
+    .img1 {
+        width: 150px;
+        height: 35px;
+    }
+
+    .img2 {
+        display: none
+    }
+
+    .img3 {
+        display: block;
+        position: absolute;
+        right: 15px;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+
+    .img4 {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 150px;
+        height: 35px;
+    }
+}
+
+.center-element img {
+    color: #93939A;
+    font-family: manrope;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 575.52px;
+    height: 48.11px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.center-element {
+    width: 575.52px;
+    height: 48.11px;
+    position: relative
+}
+
+/* loader */
+
+.loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    --looping-percent: 60;
+}
+
+.loading-spinner [id="master"], .loading-spinner [id="background"] {
+    stroke-width: 13;
+    stroke-linecap: round;
+}
+
+.loading-spinner [id="background"] {
+    stroke: #f0f0f0;
+}
+
+.loading-spinner [id="master"] {
+    --looping-length: calc((var(--looping-percent) * var(--total-length)) / 100);
+    stroke: #eb3223;
+    stroke-dasharray: var(--looping-length), calc(var(--total-length) - var(--looping-length));
+    animation: loading-loop 1.5s linear infinite;
+}
+
+@keyframes loading-loop {
+    from {
+        stroke-dashoffset: var(--total-length);
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}

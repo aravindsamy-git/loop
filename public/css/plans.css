@@ -1,0 +1,610 @@
+button,
+textarea,
+input,
+select,
+img,
+a,
+p {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+.main-container {
+  padding: 30px 5% 0%;
+}
+
+.desktop-1-inner,
+.desktop-1-item,
+.rectangle-div {
+  position: absolute;
+  top: 477px;
+  border-radius: var(--br-2xs);
+  width: 280px;
+  height: 575px;
+}
+
+.desktop-1-inner {
+  left: 421px;
+  background: linear-gradient(180deg, #c1c1c2 29%, #7b7b7b);
+}
+
+.rectangle-div {
+  left: 1069px;
+  background: linear-gradient(180deg, #55585e 29%, #313431);
+}
+
+.desktop-1-child1 {
+  position: absolute;
+  top: 290px;
+  left: 377px;
+  border-radius: var(--br-5xl);
+  background-color: var(--neutral-100);
+  border: 1px solid var(--color-crimson);
+  box-sizing: border-box;
+  width: 712px;
+  height: 78px;
+}
+
+.monthly,
+.quarterly {
+  position: absolute;
+  top: 302px;
+  left: 665px;
+  font-size: var(--font-size-21xl-9);
+  font-family: var(--font-dm-sans-18pt);
+  color: var(--color-black);
+  display: inline-block;
+  width: 163px;
+  height: 53px;
+}
+
+.quarterly {
+  left: 894px;
+  width: 194px;
+}
+
+.desktop-1-child2,
+.line-div {
+  position: absolute;
+  top: 307.5px;
+  left: 609.5px;
+  border-right: 1px solid var(--color-crimson);
+  box-sizing: border-box;
+  width: 1px;
+  height: 42px;
+}
+
+.desktop-1-child2 {
+  left: 869.5px;
+}
+
+.desktop-1-child3 {
+  position: absolute;
+  top: 295px;
+  left: 386px;
+  border-radius: var(--br-3xl) 0 0 var(--br-3xl);
+  background-color: var(--color-crimson);
+  width: 217px;
+  height: 66px;
+}
+
+
+.iron,
+.iron1,
+.iron2 {
+  top: 495px;
+  font-family: var(--font-dm-sans-18pt);
+  color: var(--color-gray-100);
+  width: 190px;
+  height: 42px;
+}
+
+.iron1 {
+  position: absolute;
+  left: 511px;
+  display: inline-block;
+}
+
+.iron2 {
+  left: 826px;
+}
+
+.likes-dislikes {
+  margin: 0;
+}
+
+.likes-dislikes-container,
+.likes-dislikes-container1,
+.likes-dislikes-container2,
+.unlimited-likes-container {
+  position: absolute;
+  top: 705px;
+  left: 157px;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  width: 220px;
+  height: 91px;
+}
+
+.likes-dislikes-container1,
+.likes-dislikes-container2,
+.unlimited-likes-container {
+  left: 469px;
+}
+
+.likes-dislikes-container2,
+.unlimited-likes-container {
+  left: 784px;
+}
+
+.unlimited-likes-container {
+  left: 1111px;
+}
+
+.div,
+.div1,
+.div2,
+.div3 {
+  position: absolute;
+  top: calc(50% - 73.5px);
+  left: calc(50% - 540.5px);
+  font-size: var(--font-size-13xl);
+  font-weight: 500;
+  font-family: var(--font-dm-sans-24pt);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+}
+
+.div1,
+.div2,
+.div3 {
+  left: calc(50% - 228.5px);
+}
+
+.div2,
+.div3 {
+  left: calc(50% + 86.5px);
+}
+
+.div3 {
+  left: calc(50% + 413.5px);
+}
+
+.rupee-1-icon,
+.rupee-2-icon,
+.rupee-3-icon,
+.rupee-4-icon {
+  position: absolute;
+  top: 828px;
+  left: 188px;
+  width: 27px;
+  height: 27px;
+  object-fit: cover;
+}
+
+.rupee-2-icon,
+.rupee-3-icon,
+.rupee-4-icon {
+  left: 502px;
+}
+
+.rupee-3-icon,
+.rupee-4-icon {
+  left: 816px;
+}
+
+.rupee-4-icon {
+  left: 1144px;
+}
+
+.desktop-1-child4 {
+  position: absolute;
+  top: 945px;
+  left: 157px;
+  border-radius: var(--br-2xl);
+  background-color: var(--color-rosybrown);
+  border: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+  width: 187px;
+  height: 73px;
+}
+
+.buy-now {
+  position: absolute;
+  top: calc(50% + 66.5px);
+  left: calc(50% - 565.5px);
+  font-size: var(--font-size-13xl);
+  font-weight: 500;
+  font-family: var(--font-dm-sans-24pt);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 172px;
+  text-shadow: 1px 0 0 rgba(185, 178, 178, 0.5),
+    0 1px 0 rgba(185, 178, 178, 0.5), -1px 0 0 rgba(185, 178, 178, 0.5),
+    0-1px 0 rgba(185, 178, 178, 0.5);
+}
+
+.desktop-1,
+.group-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.desktop-1 {
+  background-color: var(--neutral-100);
+  width: 1461px;
+  height: 1789px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-26xl-9);
+  font-family: var(--font-dm-sans);
+}
+
+.group-inner {
+  border-radius: var(--br-2xl);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+  width: 187px;
+  height: 73px;
+}
+
+.buy-now1 {
+  position: absolute;
+  top: calc(50% - 20.5px);
+  left: calc(50% - 85.5px);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 172px;
+  text-shadow: 1px 0 0 rgba(185, 178, 178, 0.5),
+    0 1px 0 rgba(185, 178, 178, 0.5), -1px 0 0 rgba(185, 178, 178, 0.5),
+    0-1px 0 rgba(185, 178, 178, 0.5);
+}
+
+.group-child1,
+.rectangle-container {
+  position: absolute;
+  width: 187px;
+  height: 73px;
+}
+
+.rectangle-container {
+  top: 945px;
+  left: 1111px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.group-child1 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-2xl);
+  background-color: var(--color-peru);
+  border: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+}
+
+.group-div {
+  top: 945px;
+  left: 779px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.group-child2,
+.group-div,
+.rectangle-parent1 {
+  position: absolute;
+  width: 187px;
+  height: 73px;
+}
+
+.group-child2 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-2xl);
+  background-color: var(--color-gray-300);
+  border: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+}
+
+.rectangle-parent1 {
+  top: 945px;
+  left: 464px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.desktop-1-parent {
+  width: 100%;
+  position: relative;
+  height: 1789px;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--neutral-100);
+  font-family: var(--font-dm-sans-24pt);
+}
+
+
+
+
+
+
+
+
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.container .box-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.container .box-container .box1 {
+  border-radius: 10px;
+  background-color: #B6825E;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+}
+
+.container .box-container .box1 h3 {
+  font-size: 25px;
+  padding: 17px 0;
+  color: rgb(255, 255, 255);
+}
+
+.container .box-container .box2 {
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #7B7B7B, #c0c0c0);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+}
+
+.container .box-container .box2 h3 {
+  font-size: 25px;
+  padding: 17px 0;
+  color: rgb(255, 255, 255);
+}
+
+.container .box-container .box3 {
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #8F5830, #F0C44C);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+}
+
+.container .box-container .box3 h3 {
+  font-size: 25px;
+  padding: 17px 0;
+  color: rgb(255, 255, 255);
+}
+
+.container .box-container .box4 {
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #313431, #55585E);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+}
+
+.container .box-container .box4 h3 {
+  font-size: 25px;
+  padding: 17px 0;
+  color: rgb(255, 255, 255);
+}
+
+.container .box-container .box1 .detail1,
+.container .box-container .box2 .detail2,
+.container .box-container .box3 .detail3,
+.container .box-container .box4 .detail4 {
+  margin: 20px 0;
+}
+
+.container .box-container .box1 .detail1 p,
+.container .box-container .box2 .detail2 p,
+.container .box-container .box3 .detail3 p,
+.container .box-container .box4 .detail4 p {
+  padding: 15px 0;
+  font-size: 24px;
+  color: white;
+}
+
+.container .box-container .box1 .btn {
+  margin: 30px;
+  display: inline-block;
+  font-size: 14px;
+  background-color: #906b51;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  /* Adjust the value to control the curvature of the edges */
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  /* Remove underline */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Add transition for smoother hover effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add transition for smoother hover effect */
+}
+
+.container .box-container .box1 .btn:hover {
+  background-color: #c1c1c2;
+}
+
+.container .box-container .box2 .btn {
+  margin: 30px;
+  display: inline-block;
+  font-size: 14px;
+  background-color: #929292;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  /* Adjust the value to control the curvature of the edges */
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  /* Remove underline */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Add transition for smoother hover effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add transition for smoother hover effect */
+}
+
+.container .box-container .box2 .btn:hover {
+  background-color: #c1c1c2;
+}
+
+.container .box-container .box3 .btn {
+  margin: 30px;
+  display: inline-block;
+  font-size: 14px;
+  background-color: #B9873C;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  /* Adjust the value to control the curvature of the edges */
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  /* Remove underline */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Add transition for smoother hover effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add transition for smoother hover effect */
+}
+
+.container .box-container .box3 .btn:hover {
+  background-color: #c1c1c2;
+}
+
+.container .box-container .box4 .btn {
+  margin: 30px;
+  display: inline-block;
+  font-size: 14px;
+  background-color: #393C3B;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  /* Adjust the value to control the curvature of the edges */
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  /* Remove underline */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Add transition for smoother hover effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add transition for smoother hover effect */
+}
+
+.container .box-container .box4 .btn:hover {
+  background-color: #c1c1c2;
+}
+
+.container .price-toggler {
+  margin-top: 20px;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #E94057;
+}
+
+.container .price-toggler span {
+  padding: 5px 30px;
+  cursor: pointer;
+  color: #313431;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.container .price-toggler span.active {
+  background: #E94057;
+  color: white;
+  border-radius: 18px;
+}
+
+.price-toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Align items vertically */
+  position: relative;
+}
+
+.price-toggler span {
+  position: relative;
+  z-index: 1;
+}
+
+.price-toggler span:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(100% + 2px);
+  /* Adjust this value to control the distance of the line from the text */
+  width: 1px;
+  /* Adjust this value to control the thickness of the line */
+  background-color: #E94057;
+  /* You can change the color of the line */
+  z-index: 0;
+}
+
+@media only screen and (max-width:700px) {
+  .container .price-toggler {
+    margin-top: 20px;
+    border-radius: 20px;
+    display: block;
+    /* Change to block to stack elements */
+    padding: 15px;
+    border: 1px solid #E94057;
+  }
+
+  .container .price-toggler span {
+    padding: 5px 30px;
+    cursor: pointer;
+    color: #313431;
+    font-size: 20px;
+    display: block;
+    /* Change to block to stack elements */
+    margin-bottom: 10px;
+    /* Add margin between each span */
+  }
+
+  .container .price-toggler span.active {
+    background: #E94057;
+    color: white;
+    border-radius: 18px;
+  }
+
+  .price-toggler span:not(:last-child)::after {
+    display: none;
+  }
+
+  .container .box-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 100px;
+  }
+}
+
+.plans {
+  color: white;
+  background: #E94057;
+}

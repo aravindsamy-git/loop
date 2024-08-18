@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loop Social </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="icon" href="../media/loop-logo.png">
+</head>
+
+<body>
+
+	<svg style="display:none">
+        <defs>
+            <symbol id="loopingPath" viewBox="0 0 147.5 68">
+                <title>Loading</title>
+                <path d="M94.65,14a27.5,27.5,0,1,1-.17,39.88L52.93,14.06a27.5,27.5,0,1,0,.12,39.77Z" fill="none"
+                    stroke-miterlimit="10" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <div id="loader" class="loader">
+        <svg class="loading-spinner">
+            <use id="background" xlink:href="#loopingPath" />
+            <use id="master" xlink:href="#loopingPath" />
+        </svg>
+    </div>
+	
+	<div class="otp-popup" id="otp-popup">
+		<div class="otp-popup-container">
+			<img src="../media/logoW.png" alt="">
+			<h1>Please enter the OTP that we sent to your phone number</h1>
+			<div class="otp-inputs" id="otp-inputs">
+				<div class="input1">
+					<input type="number" maxlength="1" class="otp-input" id="otp-input-1" required>
+				</div>
+				<div class="input2">
+					<input type="number" maxlength="1" class="otp-input" id="otp-input-2" required>
+				</div>
+				<div class="input3">
+					<input type="number" maxlength="1" class="otp-input" id="otp-input-3" required>
+				</div>
+				<div class="input4">
+					<input type="number" maxlength="1" class="otp-input" id="otp-input-4" required>
+				</div>
+			</div>
+
+			<div class="otp-btn" id="otp-btn">
+				<p>Confirm</p>
+			</div>
+			<br>
+			<p class="resend-otp" id="resend-otp">Resend otp?</p>
+		</div>
+	</div>
+
+	<div class="phonenumber-popup" id="phonenumber-popup">
+		<div class="phonenumber-popup-container">
+			<img src="../media/logoW.png" alt="">
+			<h1>Please enter Your phonenumber</h1>
+
+			<input type="number" id="phonenumberotp" placeholder="PhoneNumber" maxlength="10" minlength="10">
+
+			<div class="phonenumber-btn" id="phonenumber-btn">
+				<p>Send Otp</p>
+			</div>
+
+			<div class="close-btn" id="close-btn">
+				<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7 17L16.8995 7.10051" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+	</div>
+
+	<div class="newphonenumber-popup" id="newphonenumber-popup">
+		<div class="newphonenumber-popup-container">
+			<img src="../media/logoW.png" alt="">
+			<h1>Please enter Your New password</h1>
+
+			<input type="text" id="newphonenumberotp" placeholder="New Password">
+
+			<div class="newphonenumber-btn" id="newphonenumber-btn">
+				<p>Save</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="error-container" class="hidden">
+		<div id="error-message"></div>
+		<button id="close-error-btn">&times;</button>
+	</div>
+
+	<header id="header">
+		<img class="img1" id="logo" src="../media/logo.png" alt="" onclick="redirection('logo')">
+
+		<div class="center-element" style="width: 575.52px; height: 48.11px; position: relative">
+			<img style=" color:#93939A; font-family: manrope; display: flex; justify-content: center; align-items: center; width: 575.52px; height: 48.11px; left: 0px; top: 0px; position: absolute;"
+				src="../media/Union.png" />
+
+			<div class="overview" onclick="redirection('overview')" id="re-overview">Overview</div>
+			<div class="plans" onclick="redirection('plans')" id="re-plans">Plans</div>
+			<div class="about" onclick="redirection('policy')" id="re-policy">Policy</div>
+			<div class="signup" onclick="redirection('signup')" id="re-signup">Signup</div>
+		</div>
+
+		<div class="last-element" onclick="redirection('login')">
+			<div class="login-button" id="login-button" onclick="redirection('login')">
+				<p onclick="redirection('login')">Login</p>
+			</div>
+		</div>
+
+		<img class="img2" id="toggle-button" src="../media/menu.png">
+
+		<img class="img3" id="toggle-button1" src="../media/menu-2.png">
+	</header>
+
+	<div class="menus" id="menus">
+
+		<img class="img4" src="../media/logoW.png" alt="">
+		<i id="close-button" class="fas fa-times"></i>
+
+		<div class="options">
+			<div class="option-li" onclick="redirection('overview')" id="o-overview">
+				<a>Overview</a>
+			</div>
+			<br>
+			<div class="option-li" onclick="redirection('plans')" id="o-plans">
+				<a>Plans</a>
+			</div>
+			<br>
+			<div class="option-li" onclick="redirection('policy')" id="o-policy">
+				<a>Policy</a>
+			</div>
+			<br>
+			<div class="option-li" onclick="redirection('signup')" id="o-signup">
+				<a>Signup</a>
+			</div>
+		</div>
+
+		<div class="login-btn" onclick="redirection('login')">
+			<div class="i-login-btn" onclick="redirection('login')" id="i-login-btn">
+				<a onclick="redirection('login')">Login</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="left-content">
+			<div class="intro">
+				<span class="black-txt1">Log In to get a </span>
+				<span class="red-txt">Healthy </span>
+				<span class="black-txt2">Social life</span>
+			</div>
+		</div>
+
+
+		<div class="right-content">
+			<div class="inner-container">
+				<div class="user-welcome">Welcome User</div>
+
+				<div class="useremail">
+					<div class="useremail-box">
+						<input id="useremail-input" type="number" placeholder="Phone Number" autocomplete="off">
+					</div>
+				</div>
+
+                <div class="pass">
+                    <div class="pass-box">
+                        <input id="password-input" type="password" placeholder="Password">
+                        <div class="pass-eye">
+                            <i id="password-eye" class="fas fa-eye-slash"
+                                onclick="togglePasswordVisibility('password-input', 'password-eye')"></i>
+                        </div>
+                    </div>
+                </div>
+
+				<br>
+
+				<div class="outer-forgot">
+					<p class="Forgot-password" id="Forgot-password">Forgot Password ?</p>
+				</div>
+
+				<br>
+
+				<div id="register">
+					<div class="register-box">
+						<div class="RegText">Login</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="bottom-footer">
+		<div class="toparrow-container" onclick="scrolltotop()">
+			<img src="../media/top-arrow.png" alt="">
+			<p>TOP</p>
+		</div>
+		<footer>
+			<div class="footerfirst-element">
+				<img src="../media/f-logo.png" alt="">
+				<br>
+				<br>
+				<div class="socialmedia-con">
+					<img src="../media/facebook.png" alt="">
+					<img src="../media/twitter.png" alt="">
+					<img src="../media/instagram.png" alt="">
+					<img src="../media/linkedin.png" alt="">
+					<img src="../media/youtube.png" alt="">
+				</div>
+			</div>
+
+			<div class="footercenter-element">
+				<ul>
+					<li onclick="redirection('overview')">Overview</li>
+					<li onclick="redirection('plans')">Plans</li>
+					<li onclick="redirection('about')">About</li>
+					<li onclick="redirection('signup')">Signup</li>
+				</ul>
+			</div>
+
+			<div class="footerlast-element">
+				<p>Contact us</p>
+				<div class="email">
+					<img src="../media/email.png" alt="">
+					<p>Loopsocial@gmail.com</p>
+				</div>
+
+				<div class="phonenumber">
+					<img src="../media/Phone.png" alt="">
+					<p>91+ 7105652651</p>
+				</div>
+
+				<div class="location">
+					<img src="../media/Mark.png" alt="">
+					<p>Trichy , India</p>
+				</div>
+			</div>
+		</footer>
+		<div class="footerline-container">
+			<div class="footer-line"></div>
+			<br>
+			<div class="footerline-content">
+				<p>Copyright@2024</p>
+				<p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<script src="../js/header.js"></script>
+	<script src="../js/login.js"></script>
+
+
+</body>
+
+</html>

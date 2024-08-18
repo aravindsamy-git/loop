@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Sk-Modernist-Bold';
+    src: url('../media/sk-modernist/Sk-Modernist-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Sk-Modernist-Mono';
+    src: url('../media/sk-modernist/Sk-Modernist-Mono.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Sk-Modernist';
+    src: url('../media/sk-modernist/Sk-Modernist-Regular.otf') format('opentype');
+}

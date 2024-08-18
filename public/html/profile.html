@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoopSocial</title>
+    <link rel="icon" href="../media/loop-logo.png">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/Roboto.css">
+</head>
+<body>
+    <svg style="display:none">
+        <defs>
+            <symbol id="loopingPath" viewBox="0 0 147.5 68">
+                <title>Loading</title>
+                <path d="M94.65,14a27.5,27.5,0,1,1-.17,39.88L52.93,14.06a27.5,27.5,0,1,0,.12,39.77Z" fill="none"
+                    stroke-miterlimit="10" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <div id="loader" class="loader">
+        <svg class="loading-spinner">
+            <use id="background" xlink:href="#loopingPath" />
+            <use id="master" xlink:href="#loopingPath" />
+        </svg>
+    </div>
+    
+    <main>
+        <div class="logout-popup" id="logout-popup">
+            <div class="logout-popup-container">
+                <h1>Are you sure you want to logout?</h1>
+    
+                <div class="operations">
+                    <div class="logout-btn" id="logout-btn1">
+                        <p>Confirm</p>
+                    </div>
+                    <div class="logout-btn" id="logout-btn2">
+                        <p>Cancel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <img src="../media/logo.png" alt="">
+        </header>
+        <div class="main-block">
+            <div class="inner-block">
+                <div class="first-block">
+                    <p>Profile</p>
+                </div>
+                <div class="second-block">
+                    <div class="userprofilediv"></div>
+                </div>
+                <div class="third-block">
+                    <div class="useractivity">
+                        <div class="swipemade">
+                            <p>Swipes Made</p>
+                            <p id="swipemade" class="swipesmadecount"></p>
+                        </div>
+                        <div class="likereceived">
+                            <p>Likes Received</p>
+                            <p id="likereceived" class="likereceivedcount"></p>
+                        </div>
+                        <div class="dislikereceived">
+                            <p>Dislike Received</p>
+                            <p id="dislikereceived" class="dislikereceivedcount"></p>
+                        </div>
+                    </div>
+                    <div class="option" id="editprofile">
+                        <div class="imgtext">
+                            <img src="../media/editprofile.png" alt="">
+                            <p>Edit Profile</p>
+                        </div>
+                        <div class="arrow">
+                            <img src="../media/arrow.png" alt="">
+                        </div>
+                    </div>
+                    <div class="option" id="getpremium">
+                        <div class="imgtext">
+                            <img src="../media/getpremium.png" alt="">
+                            <p>Get Premium</p>
+                        </div>
+                        <div class="arrow">
+                            <img src="../media/arrow.png" alt="">
+                        </div>
+                    </div>
+                    <div class="option" id="logout">
+                        <div class="imgtext">
+                            <img src="../media/logout.png" alt="">
+                            <p>Log Out</p>
+                        </div>
+                        <div class="arrow">
+                            <img src="../media/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/profile.js"></script>
+</body>
+</html>
